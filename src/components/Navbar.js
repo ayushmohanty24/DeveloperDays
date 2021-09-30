@@ -11,6 +11,7 @@ import Education from "./Education";
 import Home from './Home';
 import Project from "./Project";
 import Courses from "./Courses";
+import Certi from "./Certi";
 
 export default function Navbar(props) {
     return (
@@ -41,6 +42,9 @@ export default function Navbar(props) {
                 <li className="nav-item">
                   <Link className="nav-link" to="/Courses">Courses</Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Certi">Certificates</Link>
+                </li>
               </ul>
               </div>
             </div>
@@ -59,6 +63,9 @@ export default function Navbar(props) {
           </Route>
           <Route path="/Courses">
             <Courses />
+            </Route>
+          <Route path="/Certi">
+          <Certi />
           </Route>
           <Route path="/">
             <Home />
